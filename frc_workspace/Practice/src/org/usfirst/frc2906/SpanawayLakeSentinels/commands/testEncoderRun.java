@@ -14,6 +14,7 @@ package org.usfirst.frc2906.SpanawayLakeSentinels.commands;
 import edu.wpi.first.wpilibj.command.Command;
 
 import org.usfirst.frc2906.SpanawayLakeSentinels.Robot;
+import org.usfirst.frc2906.SpanawayLakeSentinels.RobotMap;
 
 
 /**
@@ -34,6 +35,7 @@ public class  testEncoderRun extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
+    	RobotMap.testEncoder.reset();
     }
 
     // Called repeatedly when this Command is scheduled to run

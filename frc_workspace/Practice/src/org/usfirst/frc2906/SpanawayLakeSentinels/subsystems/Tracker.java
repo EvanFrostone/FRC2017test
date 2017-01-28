@@ -89,8 +89,11 @@ public class Tracker extends Subsystem {
 	
 	public void testEncoderRun(){
 		testEncoder.reset();
-		while (testRotation() < 10){
+		if (RobotMap.testEncoder.getDistance() < 10){
 			Robot.testBenchMotor.runTestMotor();
+		}
+		else {
+			Robot.testBenchMotor.stopTestMotor();
 		}
 	}
 	
