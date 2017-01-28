@@ -65,7 +65,7 @@ public class RobotMap {
     public static final double leftinBall = -0.75;
     public static final double stopBall = 0;
     public static final double powerLow = .3;
-    
+    public int getRotation = encoder.get();
     
     public static final double shootingPosition = .7;
     public static CameraServer camera;
